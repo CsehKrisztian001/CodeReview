@@ -4,7 +4,19 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            SplitMethod("alma körte banán");
+            
+            SplitMethod("piros zöld");
+            
+            SplitMethod("GPU CPU NPU FPU");
+        }
+
+        static void SplitMethod(string message)
+        {
+            foreach (var part in message.Split(" "))
+            {
+                Console.WriteLine(part);
+            }
         }
     }
 }
